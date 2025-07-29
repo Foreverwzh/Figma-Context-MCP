@@ -1,5 +1,5 @@
 {
-  "name": "figma-developer-mcp-nio",
+  "name": "@nio-fe/figma-developer-mcp",
   "version": "0.0.1",
   "description": "Model Context Protocol server for Figma integration",
   "type": "module",
@@ -49,7 +49,7 @@
     "mcp",
     "typescript"
   ],
-  "author": "",
+  "author": "zehua.wang",
   "license": "MIT",
   "dependencies": {
     "@figma/rest-api-spec": "^0.33.0",
