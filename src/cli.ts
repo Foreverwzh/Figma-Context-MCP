@@ -32,7 +32,9 @@ export async function startServer(): Promise<void> {
 }
 
 // If we're being executed directly (not imported), start the server
-if (process.argv[1]) {
+// Check if this module is the main module being executed
+const isMainModule = process.argv[1] && import.meta.url.includes(process.argv[1]);
+if (isMainModule) {
   startServer().catch((error) => {
     console.error("Failed to start server:", error);
     process.exit(1);
